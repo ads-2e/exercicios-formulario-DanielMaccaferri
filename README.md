@@ -1,39 +1,41 @@
-# AC3 - Formulários HTML5
+# Exercício - Formulários no HTML5
 
-Atividades sobre formulários no HTML5. A atividade consiste em 5 formulários que devem ser construídos usando as melhores práticas e as novas tags de inputs do HTML5.
+Esse é um exercício de correção automática sobre o conteúdo da aula de Formulários no HTML5 de Tecnologias Web da Faculdade Impacta de Tecnologia.
 
-## Entrega
+## Como fazer
 
-A entrega do exercício deve ser feito via git, usando o Github Classroom da sua turma e semestre.
+Você deve mexer apenas nos arquivos HTML dentro da pasta **src**. Nâo mexa nos outros arquivos, pois isso pode comprometer os testes. 
 
-## Modo de fazer
+Cada arquivo HTML dentro da pasta **src** possui um enunciado do que é esperado dentro dele. Escreva o código HTML e rode os testes para ver se acertou.
 
-Para fazer os exerícios, alterem apenas os arquivos *html* que estão disponíveis dentro da pasta *src*. Em cada arquivo existe um _form_ com um _id_ já especificado, não altere esse id, pois ele será usado na correção. Escrevam as tags necessárias dentro destes formulários, incluindo os atributos do form (menos o _id_).
+Não há necessidade de escrever a estrutura inteira de um documento HTML (`<html>, <head>, <body>`, etc.). Escreva apenas as tag's necessárias para a resolução do exercício.
 
-Não mexam em nenhum outro arquivo, pois todos eles são necessários para os testes rodarem.
+Edite o arquivo `membros.json` com as informações dos membros do grupo (até 3, no mínimo 1).
 
-## Como rodar os testes
+## Como Rodar
 
-Os testes foram construídos usando um framework de testes de javascript chamado Jasmine. Para executá-lo vocês devem executar um servidor HTTP e navegar até o arquivo *TestesAC3.html*.
+O exerício funciona usando o framework de testes para JavaScirpt [Jasmine](https://jasmine.github.io). Para testar esse exercício sem limitação de navegador, recomenda-se usar o HTTPServer do Python (ou qualquer outro servidor HTTP de sua preferência).
 
-Para fazer isso no Python, vocês podem usar o seguinte comando na pasta do exercício:
+Para usar o HTTP Server do Python (v3+), na pasta deste exercício execute o comando (Windows):
 
-´´´
-    python -m http.server
-´´´
+```shell
+python -m http.server
+```
 
-Isso irá iniciar um servidor local com os arquivos de teste. Para ver o teste sendo executado, abra o navegador na URL _http://localhost:8000/TestesAC3.html_.
+Ou no Linux
 
-## Regras Gerais
+```shell
+python3 -m http.server
+```
 
-Cada exerício terá um enunciado que deverá ser respeitado. Os testes indicarão se vocês estão conseguindo fazer os exercícios. O exercício é considerado correto quando todos os testes dele passam.
+Depois basta entrar em algum navegador na url http://localhost:8000/SpecRunner.html e ver os testes sendo executados.
 
-Além do que for especificado em cada exercício, as seguintes caracterísitcas devem ser observadas:
+## Como fica a nota
 
-* Todos os campos não botão devem ter um *label* conectado ao input designado cmo visto em sala de aula.
-* Toda submissão desses formulários deve ser feita por POST.
-* Use as TAG's HTML5 mais coerentes com o tipo de dado a ser obtido.
+A nota desse exercício será uma proporção entre os testes passados e não passados. São ao todo 48 testes.
 
-## Autores
+Exemplos:
 
-Para rastreamento dos autores, escreva no arquivo *autores.json* a lista de autores responsáveis por esse exercício. Siga o modelo presente e coloque o nome e RA de cada um dos membros.
+- Dos 48, 42 passaram: `(42 / 48) * 10 = 8,75`
+- Dos 48, 16 passaram: `(16 / 48) * 10 = 3,34`
+- Todos passaram: `(48 / 48) * 10 = 10`
