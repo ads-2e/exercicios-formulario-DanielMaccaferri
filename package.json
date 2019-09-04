@@ -1,7 +1,7 @@
 {
-  "name": "intro-html5",
+  "name": "formularios-html5",
   "version": "1.0.0",
-  "description": "Exercício de Introdução ao HTML5",
+  "description": "Exercício de Formulários no HTML5",
   "main": "Gruntfile.js",
   "directories": {
     "test": "tests"
