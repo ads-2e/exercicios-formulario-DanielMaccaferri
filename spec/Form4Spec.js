@@ -1,8 +1,5 @@
 describe('Form 4', () => {
-  
-  beforeAll((done) => preparar(done))
 
-  beforeEach((done) => carregar('form4.html', done))
 
   describe('Formulário', () => {
     beforeEach(() => this.form = document.querySelector('#form4'))

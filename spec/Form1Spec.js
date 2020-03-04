@@ -1,9 +1,5 @@
 describe('Form 1', () => {
   
-  beforeAll((done) => preparar(done))
-
-  beforeEach((done) => carregar('form1.html', done))
-
   describe('Formulário', () => {
     beforeEach(() => this.form = document.querySelector('#form1'))
 
@@ -39,9 +35,5 @@ describe('Form 1', () => {
     it('deve estar com o texto correto', () => expect(this.input.tagName == "INPUT" ? this.input.value : this.input.innerText).withContext('Dependendo da tag, a maneira de por um texto no botão é diferente').toBe('ENTRAR'))
 
   })
-
-  // it("deve conter um botão de submissão de formulário.", function(){
-  //   expect(this.form).toExistSubmit("ENTRAR");
-  // });
 
 });
